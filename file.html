@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AlvitoDEV</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: #020617;
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+      }
+
+      .hero-img:hover {
+        transform: scale(1.03);
+      }
+    </style>
+  </head>
+  <body class="text-white overflow-x-hidden">
+    <!-- Background -->
+    <div class="fixed inset-0 -z-10">
+      <div
+        class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(6,182,212,.08),transparent_60%)]"
+      ></div>
+
+      <div
+        class="absolute inset-0 opacity-[0.05]"
+        style="
+          background-image:
+            linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+            linear-gradient(
+              90deg,
+              rgba(255, 255, 255, 0.08) 1px,
+              transparent 1px
+            );
+          background-size: 60px 60px;
+        "
+      ></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="fixed top-5 left-1/2 -translate-x-1/2 w-[94%] max-w-6xl z-50">
+      <div
+        class="rounded-full border border-slate-800 bg-slate-900/70 backdrop-blur-xl px-7 py-4 flex justify-between items-center shadow-xl"
+      >
+        <h1 class="text-2xl font-bold">
+          <span class="text-cyan-400">Alvito</span>DEV
+        </h1>
+
+        <ul class="hidden md:flex gap-8 text-slate-300">
+          <li><a href="#" class="hover:text-white duration-300">Home</a></li>
+
+          <li>
+            <a href="#about" class="hover:text-white duration-300">About</a>
+          </li>
+
+          <li>
+            <a href="#services" class="hover:text-white duration-300"
+              >Services</a
+            >
+          </li>
+
+          <li>
+            <a href="#contact" class="hover:text-white duration-300">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="min-h-screen flex items-center">
+      <div
+        class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center"
+      >
+        <div>
+          <span class="text-cyan-400 font-semibold">
+            👋 Welcome to AlvitoDEV
+          </span>
+
+          <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mt-6">
+            Build Modern
+
+            <span class="text-cyan-400 block"> Web Experiences </span>
+          </h1>
+
+          <p class="text-slate-400 text-lg leading-8 mt-8 max-w-xl">
+            We build fast, responsive, and professional websites using HTML,
+            Tailwind CSS, Laravel, Docker, and modern web technologies.
+          </p>
+
+          <div class="flex gap-4 mt-10">
+            <a
+              href="#contact"
+              class="px-8 py-4 rounded-xl bg-cyan-500 hover:bg-cyan-400 duration-300 font-semibold shadow-lg shadow-cyan-500/20"
+            >
+              Get Started
+            </a>
+
+            <a
+              href="#about"
+              class="px-8 py-4 rounded-xl border border-slate-700 hover:border-cyan-400 hover:bg-slate-900 duration-300"
+            >
+              Learn More
+            </a>
+          </div>
+
+          <!-- Stats -->
+
+          <div class="grid grid-cols-3 gap-8 mt-16">
+            <div>
+              <h2 class="text-4xl font-bold text-cyan-400">50+</h2>
+
+              <p class="text-slate-400 mt-2">Projects</p>
+            </div>
+
+            <div>
+              <h2 class="text-4xl font-bold text-cyan-400">5+</h2>
+
+              <p class="text-slate-400 mt-2">Technologies</p>
+            </div>
+
+            <div>
+              <h2 class="text-4xl font-bold text-cyan-400">100%</h2>
+
+              <p class="text-slate-400 mt-2">Responsive</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <img
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900"
+            class="hero-img rounded-3xl border border-slate-800 shadow-2xl duration-500"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-28 bg-slate-900/40 backdrop-blur-sm">
+      <div
+        class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center"
+      >
+        <div>
+          <h2 class="text-5xl font-bold mb-8">About Us</h2>
+
+          <p class="text-slate-400 leading-8">
+            We create premium websites with modern design, responsive layouts,
+            clean code, and optimized performance. Whether it's a landing page,
+            portfolio, company profile, or web application, we focus on
+            delivering high-quality digital experiences.
+          </p>
+        </div>
+
+        <div class="grid gap-5">
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+            ✅ Responsive Design
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+            ⚡ Fast Performance
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+            💻 Clean Code
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+            🚀 Easy Deployment
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+
+    <section id="services" class="py-28">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-5xl font-bold text-center mb-20">Our Services</h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="card bg-slate-900 border border-slate-800 rounded-3xl p-8 duration-300"
+          >
+            <div
+              class="w-16 h-16 rounded-2xl bg-cyan-500/10 flex items-center justify-center text-3xl"
+            >
+              💻
+            </div>
+
+            <h3 class="text-2xl font-bold mt-6">Web Development</h3>
+
+            <p class="text-slate-400 mt-4 leading-7">
+              Responsive websites with clean architecture and modern UI.
+            </p>
+          </div>
+
+          <div
+            class="card bg-slate-900 border border-slate-800 rounded-3xl p-8 duration-300"
+          >
+            <div
+              class="w-16 h-16 rounded-2xl bg-cyan-500/10 flex items-center justify-center text-3xl"
+            >
+              ⚡
+            </div>
+
+            <h3 class="text-2xl font-bold mt-6">Performance</h3>
+
+            <p class="text-slate-400 mt-4 leading-7">
+              Optimized speed, SEO, and excellent user experience.
+            </p>
+          </div>
+
+          <div
+            class="card bg-slate-900 border border-slate-800 rounded-3xl p-8 duration-300"
+          >
+            <div
+              class="w-16 h-16 rounded-2xl bg-cyan-500/10 flex items-center justify-center text-3xl"
+            >
+              🚀
+            </div>
+
+            <h3 class="text-2xl font-bold mt-6">Deployment</h3>
+
+            <p class="text-slate-400 mt-4 leading-7">
+              Deploy your applications with Docker, VPS, and Cloud services.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+
+    <section class="pb-28">
+      <div class="max-w-5xl mx-auto px-6">
+        <div
+          class="rounded-3xl bg-slate-900 border border-slate-800 p-16 text-center"
+        >
+          <h2 class="text-5xl font-bold">Ready to Build Something Amazing?</h2>
+
+          <p class="text-slate-400 mt-6 max-w-2xl mx-auto">
+            Let's create a modern website that is fast, responsive, beautiful,
+            and ready for your business.
+          </p>
+
+          <button
+            class="mt-10 px-8 py-4 rounded-xl bg-cyan-500 hover:bg-cyan-400 duration-300 font-semibold"
+          >
+            Contact Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="contact" class="border-t border-slate-800">
+      <div
+        class="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center"
+      >
+        <div>
+          <h2 class="text-2xl font-bold">
+            <span class="text-cyan-400">Alvito</span>DEV
+          </h2>
+
+          <p class="text-slate-500 mt-2">
+            Build modern websites with confidence.
+          </p>
+        </div>
+
+        <div class="flex gap-6 mt-6 md:mt-0 text-slate-400">
+          <a href="#" class="hover:text-white">GitHub</a>
+          <a href="#" class="hover:text-white">Instagram</a>
+          <a href="#" class="hover:text-white">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="border-t border-slate-800 py-5 text-center text-slate-500">
+        © 2026 AlvitoDEV. All Rights Reserved.
+      </div>
+    </footer>
+  </body>
+</html>
